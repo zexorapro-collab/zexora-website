@@ -13,12 +13,29 @@
                                 Google Drive, share-nya "Anyone with
                                 the link can view").
    4. DESKTOP_DOWNLOAD_URL  -> link download ZIP versi Windows.
+
+   ============================================================
+   PENTING -- SUPAYA TIDAK PERLU GANTI LINK INI LAGI SETIAP RILIS
+   ============================================================
+   Link di atas pakai pola GitHub "/releases/latest/download/..." --
+   ini OTOMATIS mengarah ke rilis TERBARU kamu, apa pun nomor versinya
+   (v1.0.0, v1.0.1, v2.0.0, dst).
+
+   SYARATNYA CUMA SATU: setiap kali kamu bikin GitHub Release baru,
+   nama file yang diupload HARUS PERSIS SAMA seperti sebelumnya:
+     - APK        : "Zexora.Pro.apk"   (persis, huruf besar/kecil sama)
+     - Desktop    : "Zexora.Pro.rar"   (persis, huruf besar/kecil sama)
+
+   Kalau nama filenya sama persis di setiap rilis, kamu TIDAK PERLU
+   buka script.js ini lagi selamanya -- cukup buat Release baru di
+   GitHub, upload file dengan nama yang sama, selesai. Link di website
+   otomatis mengambil versi terbaru.
 ============================================================ */
 const PLAYSTORE_URL = "https://play.google.com/store/apps/details?id=com.zexora.pro";
 const PLAYSTORE_LIVE = false;
 
-const APK_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/download/v1.0.0/Zexora.Pro.apk";
-const DESKTOP_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/download/v1.0.0/Zexora.Pro.rar";
+const APK_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/latest/download/Zexora.Pro.apk";
+const DESKTOP_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/latest/download/Zexora.Pro.rar";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Tombol "Coba Gratis" / "Download Sekarang" dkk:
