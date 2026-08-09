@@ -17,8 +17,8 @@
 const PLAYSTORE_URL = "https://play.google.com/store/apps/details?id=com.zexora.pro";
 const PLAYSTORE_LIVE = false;
 
-const APK_DOWNLOAD_URL = "https://drive.google.com/file/d/16IcUKt1xa5C6ksCYAkDWjUluvqDSG-YD/view?usp=sharing";
-const DESKTOP_DOWNLOAD_URL = "https://drive.google.com/file/d/18fUbof0pB78F5GekuXMrQ7VXpD9Z3mqn/view?usp=sharing";
+const APK_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/download/v1.0.0/Zexora.Pro.apk";
+const DESKTOP_DOWNLOAD_URL = "https://github.com/zexorapro-collab/zexora-website/releases/download/v1.0.0/Zexora.Pro.rar";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Tombol "Coba Gratis" / "Download Sekarang" dkk:
