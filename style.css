@@ -233,6 +233,22 @@ h1,h2,h3{ font-family: var(--font-display); line-height:1.15; font-weight:700; l
 .price-amount span{ font-size:14px; font-weight:500; color: var(--text-muted); }
 .price-list{ display:flex; flex-direction:column; gap:11px; margin-bottom:26px; font-size:13.5px; color: var(--text-secondary); flex:1; }
 
+.pricing-offline-note{
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.pricing-offline-note p{ color: var(--text-secondary); font-size: 14px; margin: 0; }
+.pricing-offline-note .btn{ flex-shrink: 0; }
+
 /* cta banner */
 .cta-banner{ background: linear-gradient(120deg, rgba(34,211,238,0.12), rgba(59,130,246,0.12)); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding: 64px 0; }
 .cta-inner{ display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
@@ -279,4 +295,37 @@ h1,h2,h3{ font-family: var(--font-display); line-height:1.15; font-weight:700; l
   .footer-grid{ grid-template-columns: 1fr; gap:28px; }
   .cta-inner{ flex-direction:column; align-items:flex-start; }
   .trusted-logos{ gap:24px; }
+}
+
+/* ============ TOMBOL WHATSAPP MENGAMBANG ============ */
+.wa-float{
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: wa-pulse 2.4s ease-in-out infinite;
+}
+.wa-float:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+}
+@keyframes wa-pulse{
+  0%, 100% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0.12); }
+}
+@media (prefers-reduced-motion: reduce){
+  .wa-float{ animation: none; }
+}
+@media (max-width: 760px){
+  .wa-float{ right:16px; bottom:16px; width:54px; height:54px; }
 }
