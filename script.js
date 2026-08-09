@@ -17,7 +17,7 @@
 const PLAYSTORE_URL = "https://play.google.com/store/apps/details?id=com.zexora.pro";
 const PLAYSTORE_LIVE = false;
 
-const APK_DOWNLOAD_URL = "GANTI_DENGAN_LINK_APK_ANDA";
+const APK_DOWNLOAD_URL = "https://drive.google.com/file/d/16IcUKt1xa5C6ksCYAkDWjUluvqDSG-YD/view?usp=sharing";
 const DESKTOP_DOWNLOAD_URL = "GANTI_DENGAN_LINK_DESKTOP_ANDA";
 
 document.addEventListener("DOMContentLoaded", () => {
